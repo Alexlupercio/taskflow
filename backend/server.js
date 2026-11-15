@@ -3,7 +3,7 @@ const express = require('express')
 const cors = require('cors')
 
 const app = express()
-const PORT = 3000
+const PORT = process.env.PORT || 3000
 
 // Configuración del servidor
 app.use(cors())
@@ -22,5 +22,5 @@ app.get('/', (req, res) => {
 
 // Iniciar servidor
 app.listen(PORT, () => {
-  console.log(`Servidor funcionando en http://localhost:${PORT}`)
+  console.log(`Servidor funcionando en el puerto ${PORT}`)
 })
