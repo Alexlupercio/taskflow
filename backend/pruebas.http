@@ -1,0 +1,23 @@
+
+### Consultar todas las tareas
+GET http://localhost:3000/api/tareas
+
+### Crear una tarea
+POST http://localhost:3000/api/tareas
+Content-Type: application/json
+
+{
+  "titulo": "Terminar proyecto TaskFlow"
+}
+
+### Actualizar una tarea
+PUT http://localhost:3000/api/tareas/1794691927904
+Content-Type: application/json
+
+{
+  "titulo": "Terminar proyecto TaskFlow y revisar informe",
+  "completada": true
+}
+
+### Eliminar una tarea
+DELETE http://localhost:3000/api/tareas/1794691927904

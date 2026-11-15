@@ -1,0 +1,22 @@
+
+@import './base.css';
+
+html,
+body,
+#app {
+  width: 100%;
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: block;
+  background: #f5f7fb;
+}
+
+#app {
+  max-width: none;
+  display: block;
+}
